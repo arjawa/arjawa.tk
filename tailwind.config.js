@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['index.html', 'js/main.js'],
+  purge: ['index.html', 'js/main.min.js', 'vars.html'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
