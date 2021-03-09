@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:image" content="https://grapeice.tk/img/thumbnail.jpg"/>
+  <meta name="description" content="File Not Found">
+  <title>404</title>
+  <link rel="stylesheet" href="./css/darkmode.css">
+  <link rel="stylesheet" href="./css/fonts.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="icon" type="image/jpeg" href="https://grapeice.tk/img/favicon.jpeg">
+</head>
+<body class="bg-white dark:bg-black">
+  <div class="flex justify-center items-center h-screen w-screen p-5">
+    <div class="w-full h-56 bg-gradient-to-t from-gray-200 to-gray-100 dark:from-gray-900 dark:to-gray-800 rounded-md shadow-lg">
+      <div class="flex flex-col space-y-4 justify-center items-center h-full w-full">
+        <div class="flex justify-center w-full items-center">
+          <span class="text-yellow-400 text-6xl mr-3"><i class="fas fa-exclamation-triangle"></i></span>
+          <span class="text-7xl dark:text-white font-custom">
+            404
+          </span>
+        </div>
+        <span class="text-lg font-custom text-gray-700 dark:text-white">File Not Found</span>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      // darkmode
+      if (localStorage.theme == "dark") {
+        $('html').addClass("dark");
+      }
+    })
+  </script>
+</body>
+</html>
