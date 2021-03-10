@@ -9,9 +9,9 @@
   <meta name=”robots” content="index, follow">
   <title>Arjawa</title>
   <link rel="stylesheet" href="css/tailwind.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/fonts.min.css">
   <link rel="stylesheet" href="css/burger.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/aos.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -24,7 +24,7 @@
       <nav class="z-40 fixed top-0 inset-x-0 transition duration-500 ease-in">
         <div class="flex flex-col md:flex-row justify-between items-center w-full">
             
-          <div id="menu" class="z-20 flex justify-between md:justify-start md:space-x-3 items-center h-12 w-full px-2 md:px-12 py-1 shadow md:shadow-none">
+          <div id="menu" class="z-20 flex justify-between md:justify-start md:space-x-3 items-center h-12 w-full px-5 md:px-12 py-1 shadow md:shadow-none">
             <img class="z-20 h-full" src="img/logo.svg" alt="Arjawa">
             <div class="z-20">
               <span class="text-2xl text-white font-custom">Arjawa</span>
@@ -40,10 +40,10 @@
             
           <div id="menuCollapse" class="md:z-20 md:static absolute -top-44 transform h-46 md:h-full w-full bg-black opacity-90 md:bg-transparent md:opacity-100 transition duration-500 ease-in-out">
             <div id="menuLinks" class="flex flex-col md:flex-row md:justify-around md:items-center h-full w-full py-2 md:py-0 md:pr-5 text-white font-light">
-              <a data-scroll class="active relative p-2 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#home">Home</a>
-              <a data-scroll class="relative p-2 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#about">About</a>
-              <a data-scroll class="relative p-2 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#projects">Projects</a>
-              <a data-scroll class="relative p-2 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#contacts">Contacts</a>
+              <a data-scroll class="active relative p-2 px-5 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#home">Home</a>
+              <a data-scroll class="relative p-2 px-5 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#about">About</a>
+              <a data-scroll class="relative p-2 px-5 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#projects">Projects</a>
+              <a data-scroll class="relative p-2 px-5 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#contacts">Contacts</a>
             </div>
           </div>
           
@@ -63,11 +63,11 @@
     
     <main>
       <section id="about" data-aos="fade-up" data-aos-duration="1000" class="bg-gray-100 dark:bg-gray-900 pt-2">
-        <div class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-4 m-4 md:gap-6 shadow-md rounded-lg bg-white dark:bg-gray-800">
+        <div class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-4 m-4 md:mx-14 shadow-md rounded-lg bg-white dark:bg-gray-800">
           <div class="bgColor row-span-full md:m-4 rounded-t-lg md:rounded-lg">
             <img class="lazy rounded-t-lg md:rounded-lg" data-src="img/banner.png" alt="Main Banner">
           </div>
-          <div class="flex flex-col justify-center items-center p-4 md:p-0 space-y-4 md:space-y-6">
+          <div class="flex flex-col justify-center items-center p-4 md:p-2 space-y-4 md:space-y-6">
             <div class="flex flex-col justify-start text-1xl md:text-2xl font-light font-semibold dark:text-white">
               <span>Hai,</span>
               <span>Perkenalkan, saya Gede Putra Arjawa.</span>
@@ -78,11 +78,11 @@
           </div>
         </div>
         <div class="h-full w-auto py-4">
-          <div class="p-4">
+          <div class="p-4 md:px-14">
             <h2 id="mark" class="relative text-2xl font-custom dark:text-white">Experiences</h2>
           </div>
           <div class="flex overflow-x-scroll hide-scroll-bar">
-            <div class="flex flex-nowrap p-4 space-x-4">
+            <div class="flex flex-nowrap p-4 md:p-14 space-x-4">
               <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
                 <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/html-5.png" alt="html">
                 <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">html</span>
@@ -123,8 +123,12 @@
           </div>
         </div>
       </section>
-      <section id="projects" data-aos="fade-up" data-aos-duration="2500">
-        <div class="p-4">
+      <section id="projects">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
+	        <path class="svg-path hidden" fill="#111827" fill-opacity="1.000" fill-rule="nonzero" stroke="#111827" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+	        <path class="svg-path" fill="#F2F3F6" fill-opacity="1.000" fill-rule="nonzero" stroke="#F2F3F6" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+        </svg>
+        <div class="p-4 md:px-14" data-aos="fade-up" data-aos-duration="2500">
           <div class="py-4">
             <h2 id="mark" class="relative text-2xl font-custom dark:text-white">Projects</h2>
           </div>
@@ -140,13 +144,20 @@
     </main>
   </div>
   <footer>
-    <div id="contacts" class="p-10 flex justify-center space-x-10 dark:text-white">
+    <div id="contacts" class="bg-gray-100 dark:bg-gray-900">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
+        <path class="svg-path hidden" fill="#000000" fill-opacity="1.000" fill-rule="nonzero" stroke="#000000" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+        <path class="svg-path" fill="#FFFFFF" fill-opacity="1.000" fill-rule="nonzero" stroke="#FFFFFF" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+      </svg>
+      <div class="p-10 flex justify-center space-x-10 dark:text-white">
+        
       <a href="https://github.com/arjawa"><i class="fab fa-github"></i></a>
       <a href="mailto:arjawa123@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://www.facebook.com/gede.putraarjawa"><i class="fab fa-facebook-f"></i></a>
       <a href="https://wa.me/62881037699189"><i class="fab fa-whatsapp"></i></a>
+      </div>
     </div>
-    <div class="w-full h-10 bg-gray-200 dark:bg-gray-900">
+    <div class="w-full h-10 bg-gray-200 dark:bg-gray-800">
       <div class="h-full flex justify-center items-center dark:text-white">
         <span class="font-light">&copy;2021 Created by: <span class="color">Arjawa</span>, with <a href="https://tailwindcss.com" class="text-blue-400">tailwindcss</a></span>
       </div>
