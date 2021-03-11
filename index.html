@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:image" content="https://arjawa.tk/img/thumbnail.jpg"/>
   <meta name="description" content="Hai, perkenalkan saya Gede Putra Arjawa.Saya seorang pelajar SMK asal Indonesia.Saat ini saya sedang fokus pada perancangan dan pengem...">
   <meta name=”robots” content="index, follow">
+  
   <title>Arjawa</title>
-  <link rel="stylesheet" href="css/tailwind.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/fonts.min.css">
+  <!-- Css -->
   <link rel="stylesheet" href="css/burger.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/fonts.min.css">
+  <link rel="stylesheet" href="css/tailwind.min.css">
   <link rel="stylesheet" href="css/aos.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/main.min.css">
+  <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="https://arjawa.tk/img/favicon.jpeg">
 </head>
 <body class="flex flex-col h-screen justify-between bg-white dark:bg-black">
-  <div id="content">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Header -->
     <header class="bg-center bg-cover bg-no-repeat" style="background-image: url('img/dark_desk.jpg');">
+      <!-- Navbar -->
       <nav class="z-40 fixed top-0 inset-x-0 transition duration-500 ease-in">
         <div class="flex flex-col md:flex-row justify-between items-center w-full">
-            
           <div id="menu" class="z-20 flex justify-between md:justify-start md:space-x-3 items-center h-12 w-full px-5 md:px-12 py-1 shadow md:shadow-none">
             <img class="z-20 h-full" src="img/logo.svg" alt="Arjawa">
             <div class="z-20">
@@ -37,7 +43,6 @@
               </div>
             </div>
           </div>
-            
           <div id="menuCollapse" class="md:z-20 md:static absolute -top-44 transform h-46 md:h-full w-full bg-black opacity-90 md:bg-transparent md:opacity-100 transition duration-500 ease-in-out">
             <div id="menuLinks" class="flex flex-col md:flex-row md:justify-around md:items-center h-full w-full py-2 md:py-0 md:pr-5 text-white font-light">
               <a data-scroll class="active relative p-2 px-5 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#home">Home</a>
@@ -46,15 +51,15 @@
               <a data-scroll class="relative p-2 px-5 hover:text-gray-200 hover:bg-gray-900 md:hover:bg-transparent" href="#contacts">Contacts</a>
             </div>
           </div>
-          
         </div>
       </nav>
-      <section id="home" data-aos="zoom-i-right" data-aos-duration="2000" class="h-full pt-80 pb-10 px-5 md:px-14">
+      <!-- Main Section -->
+      <section id="home" class="h-full pt-96 pb-10 px-5 md:px-14">
         <div class="flex flex-col justify-end h-full">
           <div class="flex flex-col justify-end space-y-10">
-            <h1 class="text-3xl md:text-4xl text-white font-custom"><span class="color">Simple</span> Design<br> For The <span class="color">Perfect</span> Website</h1>
+            <h1 class="text-3xl md:text-5xl text-white font-custom"><span class="color">Simple</span> Design<br> For The <span class="color">Perfect</span> Website</h1>
             <div>
-              <a href="https://wa.me/62881037699189" class="hoverBgColor px-6 py-3 rounded-sm bg-white hover:text-white font-light font-semibold">Contact Me</a>
+              <a data-scroll href="#contacts" class="hoverBgColor px-6 py-3 rounded-sm bg-white md:text-2xl hover:text-white font-light font-semibold">Contact Me</a>
             </div>
           </div>
         </div>
@@ -62,26 +67,29 @@
     </header>
     
     <main>
-      <section id="about" data-aos="fade-up" data-aos-duration="1000" class="bg-gray-100 dark:bg-gray-900 pt-2">
+      <!-- About Me -->
+      <section id="about" data-aos="fade-up" data-aos-duration="3000" class="bg-gray-100 dark:bg-gray-900 pt-2">
         <div class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-4 m-4 md:mx-14 shadow-md rounded-lg bg-white dark:bg-gray-800">
           <div class="bgColor row-span-full md:m-4 rounded-t-lg md:rounded-lg">
-            <img class="lazy rounded-t-lg md:rounded-lg" data-src="img/banner.png" alt="Main Banner">
+            <img class="relative lazy rounded-t-lg md:rounded-lg" data-src="img/banner.png" alt="Main Banner">
           </div>
           <div class="flex flex-col justify-center items-center p-4 md:p-2 space-y-4 md:space-y-6">
-            <div class="flex flex-col justify-start text-1xl md:text-2xl font-light font-semibold dark:text-white">
-              <span>Hai,</span>
-              <span>Perkenalkan, saya Gede Putra Arjawa.</span>
-              <span>Saya seorang pelajar SMK asal Indonesia.</span>
-              <span>Saat ini saya sedang fokus pada perancangan dan pengembangan prototype website.</span>
+            <div data-aos="zoom-in" data-aos-duration="3000" class="flex flex-col justify-start text-1xl md:text-3xl font-light font-semibold dark:text-white">
+              <p>Hai,<br/>
+                Perkenalkan, saya Gede Putra Arjawa.<br/>
+                Saya seorang pelajar SMK asal Indonesia yang mempunyai minat pada dunia programming.<br/>
+                Saat ini saya sedang fokus pada perancangan dan pengembangan prototype website.</p>
+              <br/>
+              <span>Tertarik untuk menggunakan jasa saya?</span>
             </div>
-            <a href="https://wa.me/62881037699189" class="bgColor hoverColor ringColor px-6 py-2 rounded-sm hover:bg-gray-200 text-white font-light font-semibold transition duration-500 ease-out focus:outline-none focus:ring-2 animate-pulse">Contact Me</a>
+            <a data-scroll href="#contacts" class="bgColor hoverColor ringColor px-6 py-2 rounded-sm hover:bg-gray-200 text-white font-light font-semibold transition duration-500 ease-out focus:outline-none focus:ring-2 animate-pulse md:text-2xl">Contact Me</a>
           </div>
         </div>
         <div class="h-full w-auto py-4">
-          <div class="p-4 md:px-14">
-            <h2 id="mark" class="relative text-2xl font-custom dark:text-white">Experiences</h2>
+          <div data-aos="fade-right" data-aos-duration="2500" class="p-4 md:px-14">
+            <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Experiences</h2>
           </div>
-          <div class="flex overflow-x-scroll hide-scroll-bar">
+          <div class="flex md:justify-center overflow-x-scroll hide-scroll-bar">
             <div class="flex flex-nowrap p-4 md:p-14 space-x-4">
               <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
                 <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/html-5.png" alt="html">
@@ -123,46 +131,59 @@
           </div>
         </div>
       </section>
-      <section id="projects">
+      <!-- My Projects -->
+      <section>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
 	        <path class="svg-path hidden" fill="#111827" fill-opacity="1.000" fill-rule="nonzero" stroke="#111827" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
 	        <path class="svg-path" fill="#F2F3F6" fill-opacity="1.000" fill-rule="nonzero" stroke="#F2F3F6" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
         </svg>
-        <div class="p-4 md:px-14" data-aos="fade-up" data-aos-duration="2500">
-          <div class="py-4">
-            <h2 id="mark" class="relative text-2xl font-custom dark:text-white">Projects</h2>
+        <div id="projects" class="p-4 md:px-14">
+          <div data-aos="fade-right" data-aos-duration="2500" class="py-4">
+            <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Projects</h2>
           </div>
-          <div class="owl-carousel owl-theme">
-            <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
-            <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
-            <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
-            <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
-            <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
+          <div data-aos="fade-up" data-aos-duration="3000">
+            <div class="owl-carousel owl-theme">
+              <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
+              <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
+              <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
+              <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
+              <div class="item"><img class="owl-lazy" data-src="img/projects.jpg" alt="My Projects"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contacts -->
+      <section>
+        <div class="bg-gray-100 dark:bg-gray-900">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
+            <path class="svg-path hidden" fill="#000000" fill-opacity="1.000" fill-rule="nonzero" stroke="#000000" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+            <path class="svg-path" fill="#FFFFFF" fill-opacity="1.000" fill-rule="nonzero" stroke="#FFFFFF" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+          </svg>
+          <div id="contacts" class="p-4 md:px-14">
+            <div data-aos="fade-right" data-aos-duration="2500" class="py-4">
+              <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Contacts</h2>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="3000" class="flex flex-col md:flex-row justify-center md:justify-around pb-14 pt-4 md:py-14 space-y-4 md:space-y-0 dark:text-white">
+              <a href="https://github.com/arjawa"><i class="fab fa-github w-6"></i><span class="text-blue-500 dark:text-white">github.com/arjawa</span></a>
+              <a href="mailto:arjawa123@gmail.com"><i class="fas fa-envelope w-6"></i><span class="text-blue-500 dark:text-white">arjawa123@gmail.com</span></a>
+              <a href="https://www.facebook.com/gede.putraarjawa"><i class="fab fa-facebook-f w-6"></i><span class="text-blue-500 dark:text-white">facebook.com/gede.putraarjawa</span></a>
+              <a href="https://wa.me/62881037699189"><i class="fab fa-whatsapp w-6"></i><span class="text-blue-500 dark:text-white">wa.me/62881037699189</span></a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    
   </div>
+  <!-- End Wrapper -->
+  <!-- Footer -->
   <footer>
-    <div id="contacts" class="bg-gray-100 dark:bg-gray-900">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
-        <path class="svg-path hidden" fill="#000000" fill-opacity="1.000" fill-rule="nonzero" stroke="#000000" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
-        <path class="svg-path" fill="#FFFFFF" fill-opacity="1.000" fill-rule="nonzero" stroke="#FFFFFF" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
-      </svg>
-      <div class="p-10 flex justify-center space-x-10 dark:text-white">
-        
-      <a href="https://github.com/arjawa"><i class="fab fa-github"></i></a>
-      <a href="mailto:arjawa123@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.facebook.com/gede.putraarjawa"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/62881037699189"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
     <div class="w-full h-10 bg-gray-200 dark:bg-gray-800">
       <div class="h-full flex justify-center items-center dark:text-white">
         <span class="font-light">&copy;2021 Created by: <span class="color">Arjawa</span>, with <a href="https://tailwindcss.com" class="text-blue-400">tailwindcss</a></span>
       </div>
     </div>
-    <div id="fabs" data-aos="fade-up" data-aos-duration="3000" class="fixed bottom-4 md:bottom-14 right-4 md:right-14">
+    <div id="fabs" data-aos="fade-up" data-aos-duration="3000" class="fixed bottom-4 right-4">
       <div class="flex flex-col justify-center items-center space-y-6">
         <a data-scroll href="#home" class="flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white">
           <i class="fas fa-arrow-up"></i>
@@ -189,6 +210,7 @@
       </div>
     </div>
   </footer>
+  <!-- Preloader -->
   <div id="preloader" class="z-50 fixed top-0 right-0 h-screen w-screen bg-black">
     <div class="flex flex-col space-y-4 justify-center items-center h-full w-full">
       <svg class="w-20 animate-bounce" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version= "1.1" viewBox="240 552 240 240">
@@ -215,6 +237,7 @@
       </svg>
     </div>
   </div>
+  <!-- Javascripts -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.lazy.min.js"></script>
   <script src="js/main.min.js"></script>
