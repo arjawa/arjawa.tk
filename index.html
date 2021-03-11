@@ -22,17 +22,17 @@
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="https://arjawa.tk/img/favicon.jpeg">
 </head>
-<body class="flex flex-col h-screen justify-between bg-white dark:bg-black">
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Header -->
-    <header class="bg-center bg-cover bg-no-repeat" style="background-image: url('img/dark_desk.jpg');">
-      <!-- Navbar -->
-      <nav class="z-40 fixed top-0 inset-x-0 transition duration-500 ease-in">
-        <div class="flex flex-col md:flex-row justify-between items-center w-full">
-          <div id="menu" class="z-20 flex justify-between md:justify-start md:space-x-3 items-center h-12 w-full px-5 md:px-12 py-1 shadow md:shadow-none">
-            <img class="z-20 h-full" src="img/logo.svg" alt="Arjawa">
-            <div class="z-20">
+<body>
+  
+  <!-- Header -->
+  <header class="bg-center bg-cover bg-no-repeat" style="background-image: url('img/dark_desk.jpg');">
+    <!-- Navbar -->
+    <nav class="z-40 fixed top-0 inset-x-0 transition duration-500 ease-in">
+      <div class="flex justify-center w-full">
+        <div class="flex flex-col md:flex-row md:container w-full">
+          <div id="menu" class="z-20 flex justify-between md:justify-start items-center h-12 w-full px-5 md:px-0 shadow md:shadow-none">
+            <img class="z-20 h-8" src="img/logo.svg" alt="Arjawa">
+            <div class="z-20 md:px-5">
               <span class="text-2xl text-white font-custom">Arjawa</span>
             </div>
             <div id="menuToggler" class="md:hidden">
@@ -52,91 +52,100 @@
             </div>
           </div>
         </div>
-      </nav>
-      <!-- Main Section -->
-      <section id="home" class="h-full pt-96 pb-10 px-5 md:px-14">
-        <div class="flex flex-col justify-end h-full">
-          <div class="flex flex-col justify-end space-y-10">
-            <h1 class="text-3xl md:text-5xl text-white font-custom"><span class="color">Simple</span> Design<br> For The <span class="color">Perfect</span> Website</h1>
-            <div>
-              <a data-scroll href="#contacts" class="hoverBgColor px-6 py-3 rounded-sm bg-white md:text-2xl hover:text-white font-light font-semibold">Contact Me</a>
-            </div>
-          </div>
+      </div>
+    </nav>
+    <!-- Main Section -->
+    <section id="home" class="relative h-full w-full">
+      <div class="flex justify-center w-full">
+        <div class="flex flex-col justify-end md:container w-full space-y-10 pt-96 mb-20 px-5 md:px-0">
+          <h1 class="text-3xl md:text-4xl text-white font-custom"><span class="color">Simple</span> Design<br> For The <span class="color">Perfect</span> Website</h1>
         </div>
-      </section>
-    </header>
-    
-    <main>
-      <!-- About Me -->
-      <section id="about" data-aos="fade-up" data-aos-duration="3000" class="bg-gray-100 dark:bg-gray-900 pt-2">
-        <div class="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-4 m-4 md:mx-14 shadow-md rounded-lg bg-white dark:bg-gray-800">
+      </div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
+        <path class="svg-path hidden" fill="#111827" fill-opacity="1.000" fill-rule="nonzero" stroke="#111827" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M-0.26,0.95C1.89,0.91,4.04,0.87,7.17,0.95C10.30,1.03,14.40,1.23,17.52,0.91C20.64,0.59,22.78,-0.25,25.00,0.43C27.21,1.11,29.50,3.30,23.96,4.25C18.43,5.20,5.07,4.91,-0.27,4.16C-5.62,3.42,-2.94,2.22,-0.26,1.03"/>
+        <path class="svg-path" fill="#F2F3F6" fill-opacity="1.000" fill-rule="nonzero" stroke="#F2F3F6" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M-0.26,0.95C1.89,0.91,4.04,0.87,7.17,0.95C10.30,1.03,14.40,1.23,17.52,0.91C20.64,0.59,22.78,-0.25,25.00,0.43C27.21,1.11,29.50,3.30,23.96,4.25C18.43,5.20,5.07,4.91,-0.27,4.16C-5.62,3.42,-2.94,2.22,-0.26,1.03"/>
+      </svg>
+    </section>
+  </header>
+  
+  <main class="bg-gray-100 dark:bg-gray-900">
+    <!-- About Me -->
+    <section id="about" class="bg-gray-100 dark:bg-gray-900 md:-mt-10">
+      <div class="flex justify-center w-full">
+        <div data-aos="fade-up" data-aos-duration="3000" class="md:container grid grid-rows-2 md:grid-rows-none md:grid-cols-2 gap-4 m-4 md:mx-14 shadow-md rounded-lg bg-white dark:bg-gray-800">
           <div class="bgColor row-span-full md:m-4 rounded-t-lg md:rounded-lg">
-            <img class="relative lazy rounded-t-lg md:rounded-lg max-h-80 mx-auto" data-src="img/banner.png" alt="Main Banner">
+            <img class="relative lazy rounded-t-lg md:rounded-lg h-full w-full mx-auto" data-src="img/banner.png" alt="Main Banner">
           </div>
-          <div class="flex flex-col justify-center items-center p-4 md:p-2 space-y-4 md:space-y-6">
-            <div data-aos="zoom-in" data-aos-duration="3000" class="flex flex-col justify-start text-1xl lg:text-2xl font-light font-semibold dark:text-white">
-              <p>Hai,<br/>
-                Perkenalkan, saya Gede Putra Arjawa.<br/>
-                Saya seorang pelajar SMK asal Indonesia yang mempunyai minat pada dunia programming.<br/>
+          <div class="flex flex-col justify-center items-center p-4 pl-0">
+            <div data-aos="zoom-in" data-aos-duration="3000" class="flex flex-col justify-start text-1xl lg:text-2xl font-light font-semibold dark:text-white p-4 md:p-0">
+              <p class="text-justify">Hai, Perkenalkan, saya Gede Putra Arjawa.
+                Saya seorang pelajar SMK asal Indonesia yang mempunyai minat pada dunia programming.
                 Saat ini saya sedang fokus pada perancangan dan pengembangan prototype website.</p>
               <span>Tertarik untuk menggunakan jasa saya?</span>
+              <br/>
             </div>
-            <a data-scroll href="#contacts" class="bgColor hoverColor ringColor px-6 py-2 rounded-sm hover:bg-gray-200 text-white font-light font-semibold transition duration-500 ease-out focus:outline-none focus:ring-2 animate-pulse md:text-2xl">Contact Me</a>
+            <a data-scroll href="#contacts" class="bgColor hoverColor ringColor px-6 py-2 rounded-sm hover:bg-gray-200 text-white font-light font-semibold transition duration-500 ease-out focus:outline-none focus:ring-2 animate-pulse">Contact Me</a>
           </div>
         </div>
-        <div class="h-full w-auto py-4">
-          <div data-aos="fade-right" data-aos-duration="2500" class="p-4 md:px-14">
-            <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Experiences</h2>
-          </div>
-          <div class="flex md:px-12 overflow-x-scroll hide-scroll-bar">
-            <div class="flex flex-nowrap p-4 space-x-4">
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/html-5.png" alt="html">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">html</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/css-3.png" alt="css">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">css</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white" data-src="img/js.png" alt="javascript">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">javascript</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl" data-src="img/bootstrap.png" alt="bootstrap 4">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">bootstrap 4</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/tailwindcss.png" alt="tailwindcss">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">tailwindcss</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/jquery.png" alt="jquery">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">jquery</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white" data-src="img/php.png" alt="php">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">php</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/mysql.png" alt="mysql">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">mysql</span>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2500" class="group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
-                <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/codeigniter.png" alt="codeigniter 4">
-                <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">codeigniter 4</span>
-              </div>
+      </div>
+      <div class="h-full w-full py-4">
+        <div class="flex flex-col justify-center items-center">
+          <div class="md:container w-full">
+            <div data-aos="fade-right" data-aos-duration="2500" class="p-4 md:px-0">
+              <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Experiences</h2>
             </div>
           </div>
         </div>
-      </section>
-      <!-- My Projects -->
-      <section>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
-	        <path class="svg-path hidden" fill="#111827" fill-opacity="1.000" fill-rule="nonzero" stroke="#111827" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
-	        <path class="svg-path" fill="#F2F3F6" fill-opacity="1.000" fill-rule="nonzero" stroke="#F2F3F6" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
-        </svg>
-        <div id="projects" class="p-4 md:px-14">
+        <div class="flex md:justify-center overflow-x-scroll hide-scroll-bar">
+          <div class="flex flex-nowrap p-4 space-x-4 md:space-x-0 md:grid md:grid-cols-10 md:gap-4">
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/html-5.png" alt="html">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">html</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/css-3.png" alt="css">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">css</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white" data-src="img/js.png" alt="javascript">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">javascript</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl" data-src="img/bootstrap.png" alt="bootstrap 4">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">bootstrap 4</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/tailwindcss.png" alt="tailwindcss">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">tailwindcss</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 col-start-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/jquery.png" alt="jquery">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">jquery</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white" data-src="img/php.png" alt="php">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">php</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/mysql.png" alt="mysql">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">mysql</span>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="2500" class="col-span-2 group p-4 darkBgGradient hoverBgGradient flex flex-col justify-center items-center w-32 h-36 rounded-xl shadow-md bg-white">
+              <img class="darkBorder lazy h-90 rounded-xl bg-white p-2" data-src="img/codeigniter.png" alt="codeigniter 4">
+              <span class="text-1xl font-light group-hover:text-white dark:group-hover:text-black">codeigniter 4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Projects -->
+    <section class="bg-white dark:bg-black">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
+        <path class="svg-path hidden" fill="#111827" fill-opacity="1.000" fill-rule="nonzero" stroke="#111827" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+        <path class="svg-path" fill="#F2F3F6" fill-opacity="1.000" fill-rule="nonzero" stroke="#F2F3F6" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+      </svg>
+      <div id="projects" class="flex justify-center w-full p-4 md:px-14">
+        <div class="md:container w-full">
           <div data-aos="fade-right" data-aos-duration="2500" class="py-4">
             <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Projects</h2>
           </div>
@@ -150,15 +159,17 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- Contacts -->
-      <section>
-        <div class="bg-gray-100 dark:bg-gray-900">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
-            <path class="svg-path hidden" fill="#000000" fill-opacity="1.000" fill-rule="nonzero" stroke="#000000" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
-            <path class="svg-path" fill="#FFFFFF" fill-opacity="1.000" fill-rule="nonzero" stroke="#FFFFFF" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
-          </svg>
-          <div id="contacts" class="p-4 md:px-14">
+      </div>
+    </section>
+    <!-- Contacts -->
+    <section>
+      <div class="bg-gray-100 dark:bg-gray-900">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="100%" height="100%" viewBox="0 0 24.0 4.0" enable-background="new 0 0 24.0 4.0" xml:space="preserve">
+          <path class="svg-path hidden" fill="#000000" fill-opacity="1.000" fill-rule="nonzero" stroke="#000000" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+          <path class="svg-path" fill="#FFFFFF" fill-opacity="1.000" fill-rule="nonzero" stroke="#FFFFFF" stroke-opacity="1.000" stroke-width="0.04" stroke-linejoin="miter" stroke-linecap="square" d="M24.02,2.66C21.27,3.12,18.51,3.58,16.31,3.40C14.10,3.22,12.44,2.39,10.52,2.41C8.60,2.42,6.42,3.29,4.61,3.57C2.79,3.86,1.35,3.56,-0.09,3.27L-0.00,0.00001L23.96,0.00001L24.02,2.66"/>
+        </svg>
+        <div id="contacts" class="flex justify-center w-full p-4 md:px-14">
+          <div class="md:container w-full">
             <div data-aos="fade-right" data-aos-duration="2500" class="py-4">
               <h2 id="mark" class="relative text-2xl md:text-4xl font-custom dark:text-white">Contacts</h2>
             </div>
@@ -178,45 +189,45 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    
-  </div>
-  <!-- End Wrapper -->
+      </div>
+    </section>
+  </main>
+  
   <!-- Footer -->
   <footer>
     <div class="w-full h-10 bg-gray-200 dark:bg-gray-800">
       <div class="h-full flex justify-center items-center dark:text-white">
-        <span class="font-light">&copy;2021 Created by: <span class="color">Arjawa</span>, with <a href="https://tailwindcss.com" class="text-blue-400">tailwindcss</a></span>
+        <span class="font-light">&copy;2021 Created by <span class="color">Arjawa</span>, with <a href="https://tailwindcss.com" class="text-blue-400">tailwindcss</a></span>
       </div>
     </div>
-    <div id="fabs" data-aos="fade-up" data-aos-duration="3000" class="fixed bottom-4 right-4">
-      <div class="flex flex-col justify-center items-center space-y-6">
-        <a data-scroll href="#home" class="flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white">
-          <i class="fas fa-arrow-up"></i>
-        </a>
-        <div class="relative flex justify-center items-center">
-          <span id="fabMenu" class="z-20 relative flex justify-center items-center h-12 w-12 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white"><i class="fas fa-cogs"></i></span>
-          <div id="fabCollapse" class="z-10 absolute bottom-2">
-            <div class="flex justify-between space-x-2">
-              <span id="mode" class="relative -right-4 flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white transform transition duration-300 ease opacity-0"><i id="dark" class="fas fa-moon"></i></span>
-              <div id="scheme" class="opacity-0 transform transition duration-300 ease">
-                <div id="palette" class="absolute -bottom-20 right-0 transform rotate-90 opacity-0 transition duration-500 ease bg-white border rounded-full w-20 h-6">
-                  <div class="flex justify-around h-full w-full items-center">
-                    <span id="yellow" class="bg-yellow-600 hover:bg-yellow-900 rounded-full w-4 h-4"></span>
-                    <span id="red" class="bg-red-600 hover:bg-red-900 rounded-full w-4 h-4"></span>
-                    <span id="green" class="bg-green-600 hover:bg-green-900 rounded-full w-4 h-4"></span>
-                    <span id="blue" class="bg-blue-600 hover:bg-blue-900 rounded-full w-4 h-4"></span>
-                  </div>
+  </footer>
+  <!-- Fabs -->
+  <div id="fabs" class="fixed bottom-4 md:bottom-10 right-4 md:right-20 transform translate-x-36 transition duration-300">
+    <div class="flex flex-col justify-center items-center space-y-6">
+      <a data-scroll href="#home" class="flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+      <div class="relative flex justify-center items-center">
+        <span id="fabMenu" class="z-20 relative flex justify-center items-center h-12 w-12 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white"><i class="fas fa-cogs"></i></span>
+        <div id="fabCollapse" class="z-10 absolute bottom-2">
+          <div class="flex justify-between space-x-2">
+            <span id="mode" class="relative -right-4 flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white transform transition duration-300 ease opacity-0"><i id="dark" class="fas fa-moon"></i></span>
+            <div id="scheme" class="opacity-0 transform transition duration-300 ease">
+              <div id="palette" class="absolute -bottom-20 right-0 transform rotate-90 opacity-0 transition duration-500 ease bg-white border rounded-full w-20 h-6">
+                <div class="flex justify-around h-full w-full items-center">
+                  <span id="yellow" class="bg-yellow-600 hover:bg-yellow-900 rounded-full w-4 h-4"></span>
+                  <span id="red" class="bg-red-600 hover:bg-red-900 rounded-full w-4 h-4"></span>
+                  <span id="green" class="bg-green-600 hover:bg-green-900 rounded-full w-4 h-4"></span>
+                  <span id="blue" class="bg-blue-600 hover:bg-blue-900 rounded-full w-4 h-4"></span>
                 </div>
-                <span class="relative -left-6 flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white"><i id="theme" class="fas fa-palette"></i></span>
               </div>
+              <span id="theme" class="relative -left-6 flex justify-center items-center h-8 w-8 rounded-full shadow-md bg-black dark:bg-transparent text-white border-2 border-transparent dark:border-white"><i class="fas fa-palette"></i></span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
   <!-- Preloader -->
   <div id="preloader" class="z-50 fixed top-0 right-0 h-screen w-screen bg-black">
     <div class="flex flex-col space-y-4 justify-center items-center h-full w-full">
